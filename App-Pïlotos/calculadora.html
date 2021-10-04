@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Referencia Aeronautica</title>
+	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+	<link rel="stylesheet" href="calc/estilosCalc.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+	<h1>REFERENCIA AERONAUTICA</h1>
+</header>
+
+<nav>
+	<div class="grid-menu">
+		<a class="grid-menu-item" href="conversor.html">CONVERSOR</a>
+		<a class="grid-menu-item selected-menu">CALCULADOR</a>
+		<a class="grid-menu-item" href="abc-aero.html">ABC AERONAUTICO</a>
+	</div>
+</nav>
+
+<article>
+	<h1 style="margin-top: 10px; margin-left: 10px;">Calculadora</h1>
+	<div class="centrar calculadora-contenedor">
+		<div class="calculadora-grilla">
+			<div class="output">
+				<input class="display" type="text" id="result" placeholder="0">
+			</div>
+			<button name="data-number">1</button>
+			<button name="data-number">2</button>
+			<button name="data-number">3</button>
+			<button name="data-opera">+</button>
+			<button name="data-number">4</button>
+			<button name="data-number">5</button>
+			<button name="data-number">6</button>
+			<button name="data-opera">-</button>
+			<button name="data-number">7</button>
+			<button name="data-number">8</button>
+			<button name="data-number">9</button>
+			<button name="data-opera">/</button>
+			<button name="data-delete">C</button>
+			<button name="data-number">0</button>
+			<button name="data-igual">=</button>
+			<button name="data-opera">x</button>
+		</div>
+	</div>
+</article>
+
+<aside>
+	<h2>REFERENCIAS</h2>
+	<table>
+		<tr>
+			<th>Imperial</th>
+			<th>Metrico</th>
+		</tr>
+		<tr>
+			<td>1mi</td>
+			<td>1.61km</td>
+		</tr>
+	</table>
+</aside>
+
+<footer>
+	<p>Copyright Shadow-Smowing 2021</p>
+</footer>
+
+<script src="calc/DomCalc.js"></script>
+</body>
+</html>

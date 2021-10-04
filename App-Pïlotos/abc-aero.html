@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Referencia Aeronautica</title>
+	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+	<h1>REFERENCIA AERONAUTICA</h1>
+</header>
+
+<nav>
+	<div class="grid-menu">
+		<a class="grid-menu-item" href="conversor.html">CONVERSOR</a>
+		<a class="grid-menu-item" href="calculadora.html">CALCULADOR</a>
+		<a class="grid-menu-item selected-menu">ABC AERONAUTICO</a>
+	</div>
+</nav>
+
+<article>
+	<div class="content-style">
+
+	<h1>Conversor de Matriculas</h1>
+	<p><i>Ingrese una matricula para ver su forma en el abc aeronautico.</i></p>
+	
+	
+	<input id="abcresult" type="text" placeholder="LV-ABC...">
+
+	<button onclick="javascript:handleCodificar()" id="myButton">Convertir</button>
+	<br>
+	<h3>Resultado</h3>
+	<span id="resultado" style="font-size: large;"></span>
+
+	</div>
+</article>
+
+<aside>
+	<h2>REFERENCIAS</h2>
+	<div class="grid-tabla" style="margin-top: 10px;">
+	<table class="centrar">
+		<tbody>
+		<tr>
+			<th style="background-color: darkgray;"></th>
+			<th>Denominacion</th>
+		</tr>
+		<tr>
+			<td>A</td>
+			<td>Alpha</td>
+		</tr>
+		<tr>
+			<td>B</td>
+			<td>Bravo</td>
+		</tr>
+		<tr>
+			<td>C</td>
+			<td>Charlie</td>
+		</tr>
+		<tr>
+			<td>D</td>
+			<td>Delta</td>
+		</tr>
+		<tr>
+			<td>E</td>
+			<td>Echo</td>
+		</tr>
+		<tr>
+			<td>F</td>
+			<td>Foxtrot</td>
+		</tr>
+		<tr>
+			<td>G</td>
+			<td>Golf</td>
+		</tr>
+		<tr>
+			<td>H</td>
+			<td>Hotel</td>
+		</tr>
+		<tr>
+			<td>I</td>
+			<td>India</td>
+		</tr>
+		<tr>
+			<td>J</td>
+			<td>Juliet</td>
+		</tr>
+		<tr>
+			<td>K</td>
+			<td>Kilo</td>
+		</tr>
+		<tr>
+			<td>L</td>
+			<td>Lima</td>
+		</tr>
+		<tr>
+			<td>M</td>
+			<td>Mike</td>
+		</tr>
+		<tr>
+			<td>N</td>
+			<td>November</td>
+		</tr>
+		<tr>
+			<td>O</td>
+			<td>Oscar</td>
+		</tr>
+		<tr>
+			<td>P</td>
+			<td>Pappa</td>
+		</tr>
+		<tr>
+			<td>Q</td>
+			<td>Quebec</td>
+		</tr>
+		<tr>
+			<td>R</td>
+			<td>Romeo</td>
+		</tr>
+		<tr>
+			<td>S</td>
+			<td>Sierra</td>
+		</tr>
+		<tr>
+			<td>T</td>
+			<td>Tango</td>
+		</tr>
+		<tr>
+			<td>U</td>
+			<td>Uniform</td>
+		</tr>
+		<tr>
+			<td>V</td>
+			<td>Victor</td>
+		</tr>
+		<tr>
+			<td>W</td>
+			<td>Whisky</td>
+		</tr>
+		<tr>
+			<td>X</td>
+			<td>X-Ray</td>
+		</tr>
+		<tr>
+			<td>Y</td>
+			<td>Yankee</td>
+		</tr>
+		<tr>
+			<td>Z</td>
+			<td>Zulu</td>
+		</tr>
+		</tbody>
+	</table>
+
+	<table class="centrar">
+		<tbody>
+		<tr>
+			<th colspan="2">Numeros en Ingles<br />(Fonetica)</th>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>Uan</td>
+		</tr>
+		<tr>
+			<td>2</td>
+			<td>Tu</td>
+		</tr>
+		<tr>
+			<td>3</td>
+			<td>Tri</td>
+		</tr>
+		<tr>
+			<td>4</td>
+			<td>For</td>
+		</tr>
+		<tr>
+			<td>5</td>
+			<td>Fai</td>
+		</tr>
+		<tr>
+			<td>6</td>
+			<td>Six</td>
+		</tr>
+		<tr>
+			<td>7</td>
+			<td>Seven</td>
+		</tr>
+		<tr>
+			<td>8</td>
+			<td>Eit</td>
+		</tr>
+		<tr>
+			<td>9</td>
+			<td>Nainer</td>
+		</tr>
+		<tr>
+			<td>0</td>
+			<td>Zero</td>
+		</tr>
+		</tbody>
+	</table>
+	</div>
+
+	<p>*La fonetica de los numeros en ingles fue simplificada para uso aeronautico y el numero 9 se pronuncia "Nainer" para distinguirlo de "Nein", No en Aleman</p>
+
+</aside>
+
+<footer>
+	<p>Copyright Shadow-Smowing 2021</p>
+</footer>
+
+<script type="text/javascript" src="abc/abc.js"></script>
+
+</body>
+</html>

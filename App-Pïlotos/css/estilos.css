@@ -1,0 +1,171 @@
+/* AYUDA MEMORIA: Los IDs son para usar una sola vez cada vez. La class es la que se usa para multiples elementos */
+
+html {
+    height: 110%;
+    margin-bottom: 0.01em;
+}
+
+body {
+/*	background: rgb(2,0,36);
+	background: linear-gradient(45deg, rgba(2,0,36,0.17970938375350143) 0%, rgba(229,229,255,0.7847514005602241) 0%, rgba(212,248,255,1) 100%); */
+	width: 100%;
+	max-width: 1024px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+header {
+/*	width: 100%; */
+/*	max-width: 1800px; */
+	height: 120px;
+/*	background-color: lightblue; */
+	display: block;
+	top: 0;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+header h1 {
+	text-align: center;
+	padding-top: 40px;
+	font-family: 'Barlow', sans-serif;
+	font-style: italic;
+}
+
+nav {
+	height: 50px;
+/*	background-color: pink; */
+	top: 120px;
+	display: block;
+	left: 10px;
+	right: 10px;
+}
+
+article {
+	width: 100%;
+	max-width: 70%;
+/*	max-width: 929px; */
+/*	background-color: yellow; */
+	display: inline-block;
+	top: 170px;
+	overflow: auto;
+}
+
+aside {
+	width: 100%;
+	max-width: 30%;
+/*	max-width: 385px; */
+/*	background-color: orange; */
+	float: right;
+	display: inline-block;
+/*	margin-right: 10px; */
+}
+
+aside table	{
+	width: 60%;
+	text-align: center;
+	margin-left: 10px;
+}
+
+aside p {
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-top: 10px;
+}
+
+aside h2 {
+	text-align: center;
+}
+
+footer {
+    clear: both;
+    position: relative;
+    height: 100px;
+    margin-top: 0px;
+/*    background-color: purple; */
+    text-align: center;
+}
+
+footer p {
+	padding-top: 45px;
+	font-weight: bold;
+	font-style: italic;
+}
+
+/* El menu con tabla queda deprecated. Ahora usamos grids
+.menu {
+	width: 100%;
+	text-align: center;
+	vertical-align: middle;
+	height: 50px;
+}
+
+.menu th:hover {
+	background: radial-gradient(circle, lightblue 0%, lightgreen 100%);
+}
+*/
+
+.centrar {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 90%;
+}
+
+.tab-ref {
+	max-width: 200px;
+}
+
+.selected-menu {
+	background: lightgrey !important;
+}
+
+.grid-tabla {
+	display: grid;
+	grid-template-columns: 50% auto;
+}
+
+.grid-item {
+	vertical-align: top;
+}
+
+.content-style {
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.grid-menu {
+	display: inline-grid;
+	grid-template-columns: auto auto auto;
+	max-width: 1920px;
+	width: 100%;
+	text-align: center;
+	height: 100%;
+}
+
+.grid-menu a:first-child {
+	border-top-left-radius: 15px;
+	border-bottom-left-radius: 15px;
+}
+
+.grid-menu a:last-child {
+	border-bottom-right-radius: 15px;
+	border-top-right-radius: 15px;
+}
+
+.grid-menu-item {
+	background: radial-gradient(circle, white 0%, rgba(212,248,255,1) 65%);
+	padding-top: 15px;
+}
+
+.grid-menu-item:hover {
+	background: radial-gradient(circle, white 0%, rgba(212,248,255,1) 100%);
+}
+
+.calculadora-contenedor {
+	max-width: 400px;
+	width: 100%;
+	border: 1px solid;
+}

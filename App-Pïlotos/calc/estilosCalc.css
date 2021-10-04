@@ -1,0 +1,39 @@
+.calculadora-grilla {
+    display: grid;
+/*    justify-content: center;
+    align-content: center;
+    min-height: 60vh; */
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: minmax(auto, auto) repeat(4, 100px);
+    background: linear-gradient(45deg, rgba(2,0,36,0.17970938375350143) 0%, rgba(229,229,255,0.7847514005602241) 0%, rgb(43 74 80) 100%);
+}
+
+.calculadora-grilla > button {
+    cursor: pointer;
+    font-size: 2rem;
+    border: 1px solid white;
+    outline: none;
+    background-color: rgba(255, 255, 255, .75);
+}
+
+.output {
+    grid-column: 1 / -1;
+    background-color: rgba(0, 0, 0, .75);
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 10px;
+    word-wrap: break-word;
+    word-break: break-all; 
+}
+
+.output .display {
+    color: black;
+    font-size: 1.85rem;
+    text-align: right;
+}
+
+.calculadora-grilla > button:hover {
+    background-color: rgba(255, 255, 255, .9);
+}

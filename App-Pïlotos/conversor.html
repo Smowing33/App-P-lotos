@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Referencia Aeronautica</title>
+	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@1,700&display=swap" rel="stylesheet">
+	<script src="conv/conversor.js"></script>
+</head>
+<body>
+
+<header>
+	<h1>REFERENCIA AERONAUTICA</h1>
+</header>
+
+<nav>
+	<div class="grid-menu">
+		<a class="grid-menu-item selected-menu">CONVERSOR</a>
+		<a class="grid-menu-item" href="calculadora.html">CALCULADOR</a>
+		<a class="grid-menu-item" href="abc-aero.html">ABC AERONAUTICO</a>
+	</div>
+</nav>
+
+<article>
+	<h1>Conversor</h1>
+	<label for="txtNumber">Valor a convertir</label>
+	<input id="txtNumber" type="number">
+	<select name="unidades" id="cmbUnidades">
+	<option value="km"> Millas a kilometros</option>
+	<option value="mi">Kilometros a millas</option>		
+	</select>
+	<button onclick="javascript:handleConvertir()" >Convertir</button><br>
+	<label>Resultado:</label>
+	<label id="lblResultado">0</label>
+</article>
+
+<aside>
+	<h2>REFERENCIAS</h2>
+</aside>
+
+<footer>
+	<p>Copyright Shadow-Smowing 2021</p>
+</footer>
+
+</body>
+</html>
