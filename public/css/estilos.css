@@ -9,9 +9,11 @@ body {
 /*	background: rgb(2,0,36);
 	background: linear-gradient(45deg, rgba(2,0,36,0.17970938375350143) 0%, rgba(229,229,255,0.7847514005602241) 0%, rgba(212,248,255,1) 100%); */
 	width: 100%;
-	max-width: 1024px;
+	max-width: 1366px;
+	max-height: 768px;
 	margin-left: auto;
 	margin-right: auto;
+	background-color: #007991;
 }
 
 header {
@@ -33,36 +35,32 @@ header h1 {
 }
 
 nav {
-	height: 50px;
+	height: 120px;
 /*	background-color: pink; */
 	top: 120px;
-	display: block;
-	left: 10px;
+	display: inline-block;
+	margin-left: 20%;
 	right: 10px;
 }
 
 article {
-	width: 100%;
-	max-width: 70%;
+/*	width: 100%;
+	max-width: 70%; */
 /*	max-width: 929px; */
 /*	background-color: yellow; */
 	display: inline-block;
-	top: 170px;
+	float: right;
 	overflow: auto;
 }
 
 aside {
-	width: 100%;
-	max-width: 30%;
-/*	max-width: 385px; */
-/*	background-color: orange; */
-	float: right;
-	display: inline-block;
-/*	margin-right: 10px; */
+	display: grid;
+	width: 50%;
+	margin-left: 15%;
+	margin-top: 30px;
 }
 
 aside table	{
-	width: 60%;
 	text-align: center;
 	margin-left: 10px;
 }
@@ -117,10 +115,18 @@ footer p {
 }
 
 .selected-menu {
-	background: lightgrey !important;
+	padding-top: 15px;
+	background: #007991;
+	box-shadow: inset -9px -9px 16px rgba(0, 170, 204, 0.5), inset 9px 9px 16px rgba(0, 85, 102, 0.5);
+	border-radius: 56px;
+	width: 118px;
+	height: 118px;
 }
 
 .grid-tabla {
+	margin-left: 25%;
+	width: 50%;
+	text-align: center;
 	display: grid;
 	grid-template-columns: 50% auto;
 }
@@ -139,25 +145,19 @@ footer p {
 .grid-menu {
 	display: inline-grid;
 	grid-template-columns: auto auto auto;
-	max-width: 1920px;
-	width: 100%;
+	max-width: 1366px;
+	width: 50%;
 	text-align: center;
-	height: 100%;
-}
-
-.grid-menu a:first-child {
-	border-top-left-radius: 15px;
-	border-bottom-left-radius: 15px;
-}
-
-.grid-menu a:last-child {
-	border-bottom-right-radius: 15px;
-	border-top-right-radius: 15px;
 }
 
 .grid-menu-item {
-	background: radial-gradient(circle, white 0%, rgba(212,248,255,1) 65%);
 	padding-top: 15px;
+	background: #007991;
+	box-shadow: -9px -9px 16px rgba(0, 170, 204, 0.5), 9px 9px 16px rgba(0, 85, 102, 0.5);
+	border-radius: 56px;
+	width: 118px;
+	height: 118px;
+
 }
 
 .grid-menu-item:hover {
