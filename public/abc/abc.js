@@ -48,7 +48,7 @@ listaLetras.push({ letra: "-", codigo: "-" });
 listaLetras.push({ letra: " ", codigo: "" });
 
 // Get the input field
-var input = document.getElementById("abcresult");
+var input = $('abcresult');
 
 // Execute a function when the user releases a key on the keyboard
 input.addEventListener("keyup", function (event) {
