@@ -48,22 +48,28 @@ listaLetras.push({ letra: "-", codigo: "-" });
 listaLetras.push({ letra: " ", codigo: "" });
 
 // Get the input field
-var input = $('abcresult');
+var input = $("#abcresult");
 
 // Execute a function when the user releases a key on the keyboard
-input.addEventListener("keyup", function (event) {
-  // Number 13 is the "Enter" key on the keyboard
-  if (event.keyCode === 13) {
-    // Cancel the default action, if needed
-    event.preventDefault();
-    // Trigger the button element with a click
+$('#abcresult').on('keypress',function(e) {
+  if(e.which == 13) {
+    e.preventDefault();
     document.getElementById("myButton").click();
   }
 });
 
+
 function handleCodificar() {
   const userText = document.getElementById("abcresult").value;
-  document.getElementById("resultado").innerHTML = codificarTexto(userText);
+  mostrarResultado(codificarTexto(userText));
+}
+function mostrarResultado(value) {
+  $("#resultado").animate({ opacity: 0 }, 400, function () {
+    $(this).html(value).animate({ opacity: 1 }, 400, function() {
+      $("#abcresult").val("");
+
+    });
+  });
 }
 
 function codificarTexto(texto) {
@@ -83,19 +89,19 @@ function convertirLetra(letra) {
   return "*";
 }
 function escuchar() {
-    document.getElementById("btnEscuchar").innerHTML = "Escuchando...";
+  document.getElementById("btnEscuchar").innerHTML = "Escuchando...";
   recognition.start();
   console.log("Listo para recibir comandos de voz.");
 }
 
 recognition.onresult = function (event) {
-    document.getElementById("btnEscuchar").innerHTML = "Escuchar";
+  document.getElementById("btnEscuchar").innerHTML = "Escuchar";
   var voz = event.results[0][0].transcript;
   voz = voz.toLowerCase();
   console.log(voz);
   voz = voz.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
   console.log(voz);
-  document.getElementById("resultado").innerHTML = codificarTexto(voz);
+  mostrarResultado(codificarTexto(voz));
   console.log("Confidence: " + event.results[0][0].confidence);
 };
 
