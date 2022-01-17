@@ -3,6 +3,19 @@
 html {
     height: 110%;
     margin-bottom: 0.01em;
+
+/* Fuente y Textos */
+	font-family: Ek Mukta;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 15px;
+	line-height: 25px;
+/*	display: flex;
+	align-items: center;
+	text-align: center; */
+	letter-spacing: 0.0125em;
+	color: #F4F9FA;
+
 }
 
 body {
@@ -25,13 +38,15 @@ header {
 	top: 0;
 	margin-left: 10px;
 	margin-right: 10px;
-}
-
-header h1 {
 	text-align: center;
 	padding-top: 40px;
-	font-family: 'Barlow', sans-serif;
-	font-style: italic;
+}
+
+header h3 {
+/*	text-align: center; */
+	padding-top: 0px;
+/*	font-family: 'Barlow', sans-serif;
+	font-style: italic; */
 }
 
 nav {
@@ -115,12 +130,12 @@ footer p {
 }
 
 .selected-menu {
-	padding-top: 15px;
+	padding-top: 44px;
 	background: #007991;
 	box-shadow: inset -9px -9px 16px rgba(0, 170, 204, 0.5), inset 9px 9px 16px rgba(0, 85, 102, 0.5);
 	border-radius: 56px;
 	width: 118px;
-	height: 118px;
+	height: 72px;
 }
 
 .grid-tabla {
@@ -144,25 +159,30 @@ footer p {
 
 .grid-menu {
 	display: inline-grid;
-	grid-template-columns: auto auto auto;
+	grid-template-columns: 100% 100% 0%;
 	max-width: 1366px;
 	width: 50%;
 	text-align: center;
 }
 
+.grid-menu a {
+	color: #F4F9FA;
+	text-decoration: none;
+}
+
 .grid-menu-item {
-	padding-top: 15px;
+	padding-top: 44px;
 	background: #007991;
 	box-shadow: -9px -9px 16px rgba(0, 170, 204, 0.5), 9px 9px 16px rgba(0, 85, 102, 0.5);
 	border-radius: 56px;
 	width: 118px;
-	height: 118px;
+	height: 72px;
 
 }
 
-.grid-menu-item:hover {
+/* .grid-menu-item:hover {
 	background: radial-gradient(circle, white 0%, rgba(212,248,255,1) 100%);
-}
+} */
 
 .calculadora-contenedor {
 	max-width: 400px;
